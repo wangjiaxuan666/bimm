@@ -15,7 +15,8 @@ bimm_init <- function(data_train,
       ranger::ranger(
         formula = formula,
         data = data_train,
-        probability = TRUE
+        probability = TRUE,
+        importance = "impurity"
       )
 
     }
